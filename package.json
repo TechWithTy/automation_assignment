@@ -1,7 +1,9 @@
 {
   "devDependencies": {
     "@cucumber/cucumber": "^9.1.0",
-    "@types/node": "^18.15.11"
+    "@playwright/test": "^1.32.1",
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1"
   },
   "name": "cucumber_test",
   "version": "1.0.0",
@@ -98,7 +100,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js test"
   },
   "repository": {
     "type": "git",
