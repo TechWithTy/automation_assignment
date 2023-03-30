@@ -1,0 +1,34 @@
+   Assignment Criteria: 
+-pick a website/webpage to automate ✅
+-make sure to pull data from HTML table ✅
+-make sure to pull data from nested DIVs✅
+-need to demonstrate data scraping with both of the above scenarios✅
+Ex. In either an HTML table or nested DIVs. Search on “A” and bring back “B”.  We have a list of bicycles that contain bicycle color, bicycle size, bicycle price and bicycle availability.  Use one of those criteria as the search to show me the other bicycle attributes (search on size bring back size, color, availability and price).
+-include string manipulation (convert string to number, trim/split/pop)✅
+-want to see data collected and buttons clicked from a modal window ✅
+-Can share as a Word doc that has import statements but a gitHub project would be better.(shared as github repo)
+-.feature file in Gherkin✅
+- Each Given, When, Then statement will need its own reusable function when need be, which can be defined in a “xxxx.steps.ts” file and called from multiple .feature files✅
+Separate functions for Given, When, Then but they need to be reusable.  Ex. In the feature file I have this  ✅
+“Given I am logged on to task dashboard as a "Some User" user”
+We need to be able to change the string “Some User” to “Some Other User” and have the function grab the username and password based on that string (“Some User”/”Some Other User”). In other words I don’t want a separate function for each user but one that I can re-use. That said the reusable function doesn’t have to be a log in function it can be anything that can be reused.
+-.steps.ts file in typescript✅
+-when you create your project, the .step.ts file needs the relevant imports✅
+-pass/fail report at the conclusion of the test. Can be html, .pdf, etc. html is preferred.✅ (url generated
+ 
+Example:
+ 
+.feature file:
+Given ‘I log into the website as “some user” ’
+When ‘I click the first book with “CS LEWIS” as the author’
+.steps.ts file:
+Code to log into the website as “some user”
+Code to navigate through an html table find and click on the first book tile that contains the ‘string’ in the .feature file (In this case “CS LEWIS”, I want to be able to search for different authors just be changing the author name string)
+The test results in the .feature file would be something like this:
+Then the Some Users name is “some user”
+And the book title is “book title”
+And the author’s name is “CS LEWIS” (remember that’s a string that was passed in)
+Report:
+What steps passed, what steps failed, what steps were skipped.
+ 
+
