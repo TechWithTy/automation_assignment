@@ -103,7 +103,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "test": "cucumber-js test"
+    "test": "set CUCUMBER_PUBLISH_TOKEN=f10e1938-c7a9-4f1c-9681-8f70a30e0b43 && cucumber-js --publish"
   },
   "repository": {
     "type": "git",

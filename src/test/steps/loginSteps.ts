@@ -145,7 +145,8 @@ Then('there is atleast one result', async function () {
 
   await page.waitForSelector('.product__price');
   const price = await page.$('.product__price');
-  const priceText = await price?.textContent()
+    const priceText = await price?.textContent()
+  //?Output two attributes of first item
   console.log(titleText,priceText);
   
 });
