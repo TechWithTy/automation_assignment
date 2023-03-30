@@ -3,6 +3,8 @@
     "@cucumber/cucumber": "^9.1.0",
     "@playwright/test": "^1.32.1",
     "@types/node": "^18.15.11",
+    "cherio": "^1.0.0-rc.2",
+    "jsdom": "^21.1.1",
     "ts-node": "^10.9.1"
   },
   "name": "cucumber_test",
@@ -19,6 +21,7 @@
     "buffer-from": "^1.1.2",
     "capital-case": "^1.0.4",
     "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.12",
     "class-transformer": "^0.5.1",
     "cli-table3": "^0.6.3",
     "color-convert": "^2.0.1",

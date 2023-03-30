@@ -1,17 +1,29 @@
 Feature: User Searchability Tests
 
     Background:
-      Given User is logged in to the application
-      And User Clicks on the search bar and inputs the search term
+      Given User navigates to the application
+     
     
    
     Scenario: User Inputs a valid search-term
-      And User enters the search-term "red"
-      When User clicks the search icon 
-      When there is at least one result
-      Then click on the first option
+        #Getting recaptcha when loggedin
+        # And User enters the username "lavoti5445@djpich.com"
+        # And User enters the password "typecript123"
+        # When User clicks the login Button
+        # When Login is successful
+        When User clicks the search form
+        And User enters the search-term "red"
+        When User presses enter
+        Then there is atleast one result
      
      Scenario: User Inputs an invalid search-term
-      And User enters the search-term "Stephen Kind"
-      When User clicks the search icon 
-      But there are no results
+    
+        When User clicks the search form
+        And User enters the search-term "Stephen King"
+        When User checks results pop up with no result
+
+    # Examples:
+    #         | username                 | password         | color        |
+    #         | ------------------------ | ---------------- | ---------    |
+    #         | lavoti5445@djpich.com    | typecript123     | red          |
+    #         | PickleRick@hotmail.com   | invalidtype123   | Stephen King |

@@ -9,7 +9,7 @@ Feature: User Authentication Tests
       And User enters the username "lavoti5445@djpich.com"
       And User enters the password "typescript123"
       When User clicks the login Button
-      Then Login should be successful 
+      When Login is successful 
 
     Scenario: User cannot login with invalid credentials
       And User enters the username "PickleRick@hotmail.com"
