@@ -1,4 +1,4 @@
-#Cucumber TypeScript Project
+Cucumber TypeScript Project
 This project is a TypeScript implementation of Cucumber, a behavior-driven development tool. It includes a set of features and scenarios written in Gherkin syntax, which are used to drive the implementation of the application under test.
 
 Installation
