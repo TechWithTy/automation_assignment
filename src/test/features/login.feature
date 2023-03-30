@@ -6,13 +6,13 @@ Feature: User Authentication Tests
     
    
     Scenario: User can login with valid credentials
-      And User enters the username "Cucumber"
-      And User enters the username "typescript123"
+      And User enters the username "lavoti5445@djpich.com"
+      And User enters the password "typescript123"
       When User clicks the login Button
       Then Login should be successful 
 
     Scenario: User cannot login with invalid credentials
-      And User enters the username "PickleRick"
-      And User enters the username "invalidtype123"
+      And User enters the username "PickleRick@hotmail.com"
+      And User enters the password "invalidtype123"
       When User clicks the login Button
       Then But Login is unsuccessful 
